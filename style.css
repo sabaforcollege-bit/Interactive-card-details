@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.right,
+.card-front,
+.card-back {
+    padding: 0 5vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    background-image: url(./interactive-card-details-form-main/images/bg-main-mobile.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 250px;
+}
+
+.card-front {
+    background-image: url(./interactive-card-details-form-main/images/bg-card-front.png);
+    background-size: cover;
+    border-radius: 15px;
+    width: 75%;
+    height: 40vw;
+    position: absolute;
+    z-index: 999;
+    top: 30vw;
+    left: 5vw;
+    padding: 20px;
+    color: white;
+}
+
+.card-front img {
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+.bank-number {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.name-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.card-back {
+    background-image: url(./interactive-card-details-form-main/images/bg-card-back.png);
+    background-size: cover;
+    position: absolute;
+    width: 75%;
+    height: 40vw;
+    top: 7vw;
+    right: 5vw;
+    color: white;
+}
+
+.cvc {
+    position: absolute;
+    top: 17.5vw;
+    left: 55vw;
+}
+
+
+.right {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right h3 {
+    font-size: 15px;
+    padding-bottom: 2vw;
+}
+
+.name {
+    padding-bottom: 20px;
+}
+
+.card-number {
+    padding-bottom: 20px;
+}
+
+input {
+    height: 12vw;
+    width: 100%;
+    padding-left: 3vw;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.date-cvc {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.date {
+    width: 50%;
+}
+
+.date-number {
+    display: flex;
+    gap: 20px;
+}
+
+.date-number input {
+    width: 40%;
+}
+
+.cvc-fill {
+    width: 50%;
+}
+
+.cvc-fill input {
+    width: 100%;
+}
+
+.warning {
+    color: red;
+    /* display: none; */
+}
+
+button {
+    height: 15vw;
+    background-color: #24052e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@media (min-width: 900px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100vh;
+    }
+
+    .card-front {
+        height: 19vw;
+        width: 100%;
+        top: 28vw;
+        right: 0vw;
+        left: 10vw;
+    }
+
+    .card-front img {
+        height: 40px;
+        padding-bottom: 5px;
+    }
+
+    .bank-number {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .name-date {
+        margin-top: 30px;
+        font-size: 12px;
+    }
+
+    .card-back {
+        height: 19vw;
+        width: 100%;
+        top: 58vw;
+        left: 10vw;
+        padding: 30px;
+    }
+
+    .cvc {
+        top: 8vw;
+        left: 25vw;
+    }
+
+    .right {
+        width: 70%;
+        height: auto;
+        padding: 0 15vw;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .right h3 {
+        padding-bottom: 10px;
+    }
+
+    input {
+        height: 5vw;
+        width: 100%;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    button {
+        height: 6vw;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 30%;
+        height: 100vh;
+    }
+
+    .card-front {
+        height: 15vw;
+        width: 100%;
+        top: 10vw;
+        left: 8vw;
+        padding: 30px;
+    }
+
+    .card-front img {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .bank-number {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+    .name-date {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .card-back {
+        height: 15vw;
+        width: 100%;
+        top: 27vw;
+        right: 0vw;
+        left: 12vw;
+    }
+
+    .cvc {
+        top: 7vw;
+        left: 22vw;
+        font-size: 30px;
+    }
+
+    .right {
+        width: 70%;
+        height: auto;
+        padding: 0 18vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right h3 {
+        padding-bottom: 10px;
+    }
+
+    input {
+        height: 3vw;
+        width: 100%;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    button {
+        height: 4vw;
+    }
+}
