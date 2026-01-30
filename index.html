@@ -13,10 +13,12 @@
         <div class="left">
             <div class="card-front">
                 <img src="./interactive-card-details-form-main/images/card-logo.svg" alt="">
-                <h1 class="bank-number">0000 0000 0000 0000</h1>
-                <div class="name-date">
-                    <h3>JANE APPLESEED</h3>
-                    <h3>00/00</h3>
+                <div class="bank-name">
+                    <h1 class="bank-number">0000 0000 0000 0000</h1>
+                    <div class="name-date">
+                        <h3>JANE APPLESEED</h3>
+                        <h3>00/00</h3>
+                    </div>
                 </div>
             </div>
             <div class="card-back">
@@ -30,7 +32,7 @@
             </div>
             <div class="card-number">
                 <h3>CARD NUMBER</h3>
-                <input type="number" placeholder="e.g. 1234 5678 9123 0000">
+                <input type="text" placeholder="e.g. 1234 5678 9123 0000">
                 <div class="warning">
                     <p>Wrong format, numbers only</p>
                 </div>
@@ -39,8 +41,8 @@
                 <div class="date">
                     <h3>EXP.DATE (MM/YY)</h3>
                     <div class="date-number">
-                        <input type="number" placeholder="MM">
-                        <input type="number" placeholder="YY">
+                        <input type="text" placeholder="MM">
+                        <input type="text" placeholder="YY">
                     </div>
 
                     <div class="warning">
@@ -49,13 +51,12 @@
                 </div>
                 <div class="cvc-fill">
                     <h3>CVC</h3>
-                    <input type="number" placeholder="e.g. 123">
+                    <input type="text" placeholder="e.g. 123">
                     <div class="warning">
                         <p>can't be blank</p>
                     </div>
                 </div>
             </div>
-
             <button>Confirm</button>
         </div>
     </main>
